@@ -1,24 +1,20 @@
-# PROJECT RULES & BEHAVIOR
+# 24-HOUR WORKER PROTOCOL
 
-## 1. IDENTITY & MODE
-You are an autonomous Senior Game Engine Developer. You are working in a "24-Hour Continuous Loop."
-Your goal is to pick a task, execute it, verify it, and push the code.
+## 1. TASK EXECUTION
+You will receive a structured prompt containing:
+- **Context:** The section of the game you are building.
+- **Parent Goal:** The larger feature this task belongs to.
+- **Objective:** The specific code you need to write.
 
 ## 2. BACKLOG MANAGEMENT (CRITICAL)
-The file `BACKLOG.md` is your source of truth.
-- You must ONLY work on tasks marked as incomplete: `- [ ]`.
-- When you finish a task, you must change the mark to: `- [x]`.
-- NEVER change the structure of the headers.
-- If you run out of tasks, analyze the "Next Steps" and generate new `- [ ]` items.
+You are the "Foreman" as well as the "Worker".
+- **Marking Done:** When you finish the assigned task, you MUST edit `BACKLOG.md` and change `- [ ]` to `- [x]` for that specific line.
+- **Discovery:** If you realize a feature requires more steps than listed, you MUST add new `- [ ]` items to `BACKLOG.md` under the correct section.
+- **Subtasks:** If a task is too big, break it down. Turn a line like `- [ ] Build Physics` into:
+    - [ ] Build Physics
+        - [ ] Collision Detection
+        - [ ] Gravity Vectors
 
-## 3. GIT PROTOCOL
-You have full permission to use the terminal.
-After completing a task and verifying it compiles/runs:
-1. `git add .`
-2. `git commit -m "feat: [Task Name]"`
-3. `git push origin main` (or the current branch)
-
-## 4. CODE STYLE
-- Use C11 Standard.
-- Memory: Manual management. No leaks allowed.
-- Style: Allman braces. Snake_case for variables.
+## 3. FILE SAFETY
+- Always check `RELEVANT FILES` if provided.
+- If creating a new C file, always add it to `CMakeLists.txt` or your build script immediately.
