@@ -1,0 +1,3 @@
+- [ ] Add a dark mode toggle to the settings page
+- [ ] Refactor the user login function to use async/await
+- [ ] Create a unit test for the payment gateway
