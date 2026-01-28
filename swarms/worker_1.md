@@ -1,0 +1,1 @@
+Implement custom memory allocator using memory pools and arena allocation to minimize malloc/free overhead. Focus on cache-friendly data layouts (struct-of-arrays) and zero-allocation game loops for optimization.
