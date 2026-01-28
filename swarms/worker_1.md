@@ -1,1 +1,1 @@
-Implement custom memory allocator using memory pools and arena allocation to minimize malloc/free overhead. Focus on cache-friendly data layouts (struct-of-arrays) and zero-allocation game loops for optimization.
+Create a job system with worker threads for parallel asset loading using platform-specific threading (Win32 threads or pthreads). This will serve as the engine's foundation for future async operations.
