@@ -1,1 +1,1 @@
-Create a job system with worker threads for parallel asset loading using platform-specific threading (Win32 threads or pthreads). This will serve as the engine's foundation for future async operations.
+Build an efficient virtual file system (VFS) that supports packed archives for faster disk I/O. This system must be designed to eventually interface with the asset streaming manager and support memory-mapped files.
