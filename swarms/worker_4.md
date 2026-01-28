@@ -1,0 +1,1 @@
+Build an efficient virtual file system (VFS) that supports packed archives for faster disk I/O. This system must be designed to eventually interface with the asset streaming manager and support memory-mapped files.
