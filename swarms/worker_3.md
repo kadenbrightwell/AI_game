@@ -1,0 +1,1 @@
+Create a job system with worker threads for parallel asset loading using platform-specific threading (Win32 threads or pthreads). This will serve as the engine's foundation for future async operations.
