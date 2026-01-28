@@ -1,1 +1,1 @@
-Build an efficient virtual file system (VFS) that supports packed archives for faster disk I/O. This system must be designed to eventually interface with the asset streaming manager and support memory-mapped files.
+Set up project structure with modular compilation (/src/core, /src/graphics, /src/audio, /src/memory) and establish the initial build system (CMake or Makefile) as specified in the Tech Stack Summary.
